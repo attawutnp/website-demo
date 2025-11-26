@@ -262,6 +262,17 @@
             align-items: center;
             gap: 6px;
         }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--text-secondary);
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
     </style>
 </head>
 
@@ -395,7 +406,9 @@
           </div>
         </div>
 
-        <img src="${imagePath}" class="image-preview" onclick="openModal('${imagePath}')" alt="Flood Analysis">
+        <button id="toggleImgBtn" class="btn btn-outline" onclick="openModal('${imagePath}')">
+          📸 แสดงภาพถ่ายดาวเทียม
+        </button>
 
         <div class="action-buttons">
           <a href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}" target="_blank" class="btn btn-primary">
