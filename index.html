@@ -122,6 +122,17 @@
     button:hover {
       background-color: #1d4ed8;
     }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      margin-top: 12px;
+    }
+
+    .btn-secondary:hover {
+      background-color: #eff6ff;
+    }
   </style>
 </head>
 
@@ -135,6 +146,9 @@
       <div class="input-group">
         <input type="text" id="activityId" placeholder="Enter Activity ID" autofocus>
         <button id="searchBtn">Search</button>
+        <a href="preview_thcom_flood_buf10k_buahueng_nongoeng.html" target="_blank">
+          <button class="btn-secondary">🌏 View Flood Preview</button>
+        </a>
       </div>
     </div>
   </div>
